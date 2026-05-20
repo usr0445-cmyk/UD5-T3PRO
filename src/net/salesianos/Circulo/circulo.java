@@ -19,5 +19,11 @@ public class circulo implements interfazFiguras {
     public double calcularPerimetro() {
         return 2 * Math.PI * radio;
     }
+
+    @Override
+    public String toString() {
+        return "Circulo => Radio: " + radio;
+    }
+    
 }
 
