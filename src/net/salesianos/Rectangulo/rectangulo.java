@@ -19,5 +19,12 @@ public class rectangulo implements interfazFiguras  {
     public double calcularPerimetro() {
         return 2 * (base + altura);
     }
+
+    
+    @Override
+    public String toString() {
+        return "Rectangulo => Base: " + base + ", Altura:" + altura;
+    }
+
     
 }
