@@ -16,6 +16,12 @@ public class App {
 
         rectangulo rectangulo1 = new rectangulo(base, altura);
 
+        System.out.println(rectangulo1.toString());
+        System.out.println("Area del rectangulo: " + rectangulo1.calcularArea());
+        System.out.println("Perimetro del rectangulo: " + rectangulo1.calcularPerimetro());
+
+
+        
 
 
 
