@@ -1,10 +1,8 @@
 package src.net.salesianos.InterfazFiguras;
 
-public class interfazFiguras {
-    
     //Interfaz con los metodos de calculo geométrico 
-    public interface CalculoBiodimensional {
+    public interface interfazFiguras {
         double calcularArea();
         double calcularPerimetro();
     }
-}
+
