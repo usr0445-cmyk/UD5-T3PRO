@@ -1,3 +1,4 @@
+package src;
 import java.util.Scanner;
 import src.net.salesianos.Rectangulo.rectangulo;
 import src.net.salesianos.Circulo.circulo;
