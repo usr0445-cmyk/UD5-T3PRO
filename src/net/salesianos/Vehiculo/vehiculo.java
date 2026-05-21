@@ -8,5 +8,12 @@ public abstract class vehiculo {
     protected String modelo;
     protected String matricula;
 
+    public vehiculo(String color, int numeroPuertas, int numeroRuedas, String modelo, String matricula) {
+        this.color = color;
+        this.numeroPuertas = numeroPuertas;
+        this.numeroRuedas = numeroRuedas;
+        this.modelo = modelo;
+        this.matricula = matricula;
+    }
 
 }
