@@ -20,6 +20,16 @@ public class App {
         System.out.println("Area del rectangulo: " + rectangulo1.calcularArea());
         System.out.println("Perimetro del rectangulo: " + rectangulo1.calcularPerimetro());
 
+        
+        System.out.println("Introduce el radio del circulo: ");
+        double radio = scanner.nextDouble();
+
+        circulo circulo1 = new circulo(radio);
+
+        System.out.println(circulo1.toString());
+        System.out.println("Area del circulo: " + circulo1.calcularArea());
+        System.out.println("Perimetro del circulo: " + circulo1.calcularPerimetro());
+
 
         
 
