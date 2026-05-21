@@ -20,4 +20,14 @@ public abstract class vehiculo {
     public abstract void pararMotor();
     public abstract void mover();
 
+    public String getColor() {
+        return color;
+    }
+    public String getModelo() {
+        return modelo;
+    }   
+    public String getMatricula() {
+        return matricula;
+    }
+
 }
