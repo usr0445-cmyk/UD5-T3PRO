@@ -26,7 +26,6 @@ public class cocheCombustion extends vehiculo {
         }
     }
 
-
     @Override
     public void pararMotor() {
         if (motorEncendido) {
@@ -37,5 +36,22 @@ public class cocheCombustion extends vehiculo {
         }
     }
 
+    @Override
+    public void mover() {
+        if (!motorEncendido) {
+            System.out.println("No se puede mover el coche. El motor esta apagado.");
+            return;
+        }
 
-}
+        if (litrosCombustible <= 0) {
+            System.out.println("No se puede mover el coche. No hay combustible.");
+            motorEncendido = false;
+            System.out.println("El coche se ha apagado por falta de combustible.");
+            return;
+        }
+        litrosCombustible--;
+        System.out.println("El coche se ha movido. Combustible restante: " + litrosCombustible);
+
+        }
+    }
+
