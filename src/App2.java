@@ -1,5 +1,6 @@
 package src;
-import src.net.salesianos.CocheCombustion.cocheCombustion;;
+import src.net.salesianos.CocheCombustion.cocheCombustion;
+import src.net.salesianos.Vehiculo.vehiculo;
 
 public class App2 {
     public static void main(String[] args) {
@@ -17,9 +18,15 @@ public class App2 {
         coche1.mover();
         coche1.mover();
 
+        System.out.println("Combustible restante: " + coche1.litrosCombustible);
 
+        System.out.println("Cambiando combustible a 2 litros...");
+        coche1.litrosCombustible = 2;
 
-
+        System.out.println("Moviendo el coche 3 veces con 2 litros...");
+        coche1.mover();
+        coche1.mover();
+        coche1.mover();
 
 
 
