@@ -14,4 +14,17 @@ public class cocheCombustion extends vehiculo {
     }
 
 
+    @Override
+    public void arrancar(){
+        if (litrosCombustible > 0){
+            litrosCombustible--;
+            motorEncendido = true;
+            System.out.println("El coche ha arrancado. Combustible restante: " + litrosCombustible);
+        } else {
+            motorEncendido = false;
+            System.out.println("No se puede arrancar el coche. No hay combustible.");    
+        }
+    }
+
+
 }
