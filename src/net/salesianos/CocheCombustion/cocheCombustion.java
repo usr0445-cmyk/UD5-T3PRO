@@ -27,4 +27,15 @@ public class cocheCombustion extends vehiculo {
     }
 
 
+    @Override
+    public void pararMotor() {
+        if (motorEncendido) {
+            motorEncendido = false;
+            System.out.println("El coche se ha apagado.");
+        } else {
+            System.out.println("El coche ya está apagado.");
+        }
+    }
+
+
 }
